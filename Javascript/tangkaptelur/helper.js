@@ -1,3 +1,19 @@
+var access_token = localStorage.getItem("token");
+if (access_token == null) {
+  window.location.href = "./login.html";
+}
+
+console.log(access_token);
+
+function loadGame() {
+    window.location.href = "https://arifiani1009.github.io/PWebEIF23/Javascript/tangkaptelur/";
+}
+
+function logout() {
+    localStorage.removeItem("access_token");
+    window.location.href = "./login.html";
+}
+
 function acakTelur() {
     var acak = Math.round(Math.random() * 10);
     if (acak == 0) {
