@@ -1,3 +1,8 @@
+var access_token = localStorage.getItem("token");
+if (access_token == null) {
+  window.location.href = "./login.html";
+}
+
 //mendefinisikan canvas dan tools untuk menggambar
 var cvs = document.getElementById('canvas');
 var ctx = cvs.getContext('2d');
@@ -81,3 +86,12 @@ function loop() {
         requestAnimationFrame(loop);
 }
 loop();
+
+function loadGame() {
+    window.location.href = "/";
+  }
+  
+  function logout() {
+    localStorage.removeItem("token");
+    window.location.href = "/";
+  }
