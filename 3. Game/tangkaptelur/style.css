@@ -6,7 +6,7 @@ body,html{
     margin: 20px;
 }
 
-.container{
+.containercanvas{
 
     float: right;
 }
@@ -68,8 +68,8 @@ body,html{
     height : 600px;
     background: rgba(0,0,0,0.875);
     position: absolute;
-    top:28px;
-    left:28px;   
+    margin-top: 20px;
+    margin-left: 20px;
     text-align: center;
     box-sizing:border-box ;
     padding-top:100px;  
