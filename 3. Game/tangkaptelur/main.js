@@ -1,6 +1,6 @@
 var access_token = localStorage.getItem("token");
 if (access_token == null) {
-  window.location.href = "./login.html";
+  window.location.href = "/";
 }
 
 //mendefinisikan canvas dan tools untuk menggambar
