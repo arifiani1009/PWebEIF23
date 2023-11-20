@@ -88,10 +88,10 @@ function loop() {
 loop();
 
 function loadGame() {
-    window.location.href = "./";
+    window.location.href = "https://arifiani1009.github.io/PWebEIF23/3.%20Game/";
   }
   
 function logout() {
     localStorage.removeItem("token");
-    window.location.href = "./";
+    window.location.href = "https://arifiani1009.github.io/PWebEIF23/3.%20Game/";
 }
